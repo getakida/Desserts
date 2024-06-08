@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- DatePicker -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <!-- 오늘 들었던 노래 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/viewText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:gravity="center"
+                android:text="오늘 들었던 노래 중에 힐링된 노래"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtSong"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#DDDDDD"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="7dp"
+                android:hint="오늘 힐링된 노래를 입력하세요" />
+
+            <!-- 오늘 내가 들었던 말 -->
+            <TextView
+                android:id="@+id/viewText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:gravity="center"
+                android:text="오늘 내가 들었던 말 중에 가장 좋았던 말"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtQuote"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#DDDDDD"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="7dp"
+                android:hint="오늘 하루 좋았던 말을 입력하세요" />
+
+            <!-- 저장 버튼 -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="힐링 모음집 저장" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

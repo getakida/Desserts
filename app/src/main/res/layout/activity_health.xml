@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- DatePicker -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <!-- 칼로리 기록 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/viewText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:gravity="center"
+                android:text="칼로리 기록"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/calorieEditText"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#DDDDDD"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:inputType="numberDecimal"
+                android:padding="7dp"
+                android:hint="오늘 섭취한 칼로리를 입력하세요" />
+
+            <!-- 운동 일기 -->
+            <TextView
+                android:id="@+id/viewText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDD"
+                android:gravity="center"
+                android:text="운동 일기"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/exerciseDiaryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#DDDDDD"
+                android:ems="10"
+                android:gravity="start|center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="7dp"
+                android:hint="오늘의 운동 일기를 입력하세요" />
+
+            <!-- 저장 및 수정 버튼 -->
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="저장"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "110260257710",
+    "project_id": "desserts-b9a5c",
+    "storage_bucket": "desserts-b9a5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110260257710:android:ebf14c1e54e2f016343e3f",
+        "android_client_info": {
+          "package_name": "com.example.desserts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASNKN91A1u_Ia8vqN8GgPkXC5wygY8sgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
